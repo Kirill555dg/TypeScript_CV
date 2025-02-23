@@ -1,0 +1,36 @@
+:root {
+    /* Цвета */
+    --primary-color: #2d3748;
+    --secondary-color: #4a5568;
+    --accent-color: #2563eb; /* Более яркий синий */
+    --border-color: #e5e7eb; /* Светлее разделители */
+    --bg-color: #ffffff;
+    --sidebar-bg: #f8f9fa;
+    --tech-frontend: #dbeafe;
+    --tech-frontend-text: #1d4ed8;
+    --tech-tools: #fef3c7;
+    --tech-tools-text: #b45309;
+    --tech-methodology: #ede9fe;
+    --tech-methodology-text: #5b21b6;
+
+    /* Типографика */
+    --font-family: 'Inter', sans-serif;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+  
+    /* Отступы */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 0rem;
+  
+    /* Тени */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  
+    /* Размеры */
+    --max-content-width: 90vw; /* Ширина 90% от экрана */
+    --sidebar-width: 340px; /* Увеличим ширину сайдбара */
+    --content-max-width: 1200px; /* Максимальная ширина контента */
+  }

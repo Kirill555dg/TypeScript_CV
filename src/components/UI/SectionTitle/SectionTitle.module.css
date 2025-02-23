@@ -1,0 +1,22 @@
+.sectionTitle {
+  position: relative;
+  margin: var(--space-lg) 0 var(--space-md);
+  font-size: var(--text-xl);
+  color: var(--primary-color);
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: var(--accent-color);
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  padding-right: var(--space-md);
+}

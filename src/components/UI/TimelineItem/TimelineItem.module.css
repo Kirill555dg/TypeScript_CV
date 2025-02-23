@@ -1,0 +1,82 @@
+.container {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: var(--space-md);
+    position: relative;
+    padding-bottom: var(--space-lg);
+}
+
+.timeline {
+    position: relative;
+    height: 100%;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    z-index: 1;
+}
+
+.line {
+    position: absolute;
+    left: 11px;
+    top: 16px;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.date {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 0.25rem 0;
+}
+
+.subtitle {
+    color: var(--accent-color);
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+}
+
+.description {
+    color: var(--secondary-color);
+    line-height: 1.6;
+    margin-top: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding-left: var(--space-md);
+    }
+
+    .timeline {
+        display: none;
+    }
+
+    .date {
+        font-weight: 600;
+    }
+}
+
+/* TimelineItem.module.css */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+    }
+}

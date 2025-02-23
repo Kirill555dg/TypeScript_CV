@@ -1,0 +1,21 @@
+.qualities {
+    padding: 1.5rem 0 0 0;
+}
+
+.qualities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.8rem;
+}
+
+.quality {
+    background: #f9fafb;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #e5e7eb;
+}

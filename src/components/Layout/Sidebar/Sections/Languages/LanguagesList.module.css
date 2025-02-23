@@ -1,0 +1,25 @@
+.languagesSection {
+    padding: 1.5rem 0 0 0;
+}
+
+.languagesList {
+    margin-top: 1rem;
+}
+
+.languageItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    padding: 0.3rem 0;
+}
+
+.languageName {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.languageLevel {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

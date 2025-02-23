@@ -1,25 +1,21 @@
 import React from 'react';
 import styles from './Layout.module.css';
 import Sidebar from './Sidebar/Sidebar';
-import MainContent from './Main/MainContent';
-import { AppData } from '../../data/interfaces';
+import Main from './Main/Main';
 
+import { SidebarProps } from './Sidebar/Sidebar';
+import { MainProps } from './Main/Main';
 
-export default function Layout({ sidebar, main }: AppData) {
+export interface LayoutProps {
+  sidebar: SidebarProps;
+  main: MainProps;
+}
+
+export default function Layout({ sidebar, main }: LayoutProps) {
   return (
     <div className={styles.container}>
-      <Sidebar
-        personal={sidebar.personal}
-        skills={sidebar.skills}
-        languages={sidebar.languages}
-        qualities={sidebar.qualities}
-      />
-      <MainContent
-        about={main.about}
-        projects={main.projects}
-        education={main.education}
-        courses={main.courses}
-      />
+      <Sidebar {...sidebar} />
+      <Main {...main} />
     </div>
   );
 }

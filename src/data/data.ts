@@ -1,19 +1,19 @@
-import { AppData } from './interfaces';
+import { LayoutProps } from '../components/Layout/Layout';
 
-const data: AppData = {
+
+const data: LayoutProps = {
   sidebar: {
-    personal: {
+    profile: {
       name: "Кирилл Миркин",
       position: "Фронтенд разработчик",
-      description: "Студент 2 курса бакалавриата программной инженерии РТУ МИРЭА",
-      contacts: {
-        email: "Kirill555dg@gmail.com",
-        telegram: "@Kerrodar",
-        github: "https://github.com/Kirill555dg",
-        vk: "vk.com/kerrodar"
-      },
-      birthDate: "23.10.2005",
-      citizenship: "Российская Федерация"
+      description: "Студент 2 курса РТУ МИРЭА"
+    },
+    
+    contacts: {
+      email: "Kirill555dg@gmail.com",
+      telegram: "https://t.me/Kerrodar",
+      github: "https://github.com/Kirill555dg",
+      vk: "https://vk.com/kerrodar"
     },
 
     skills: [
@@ -42,7 +42,7 @@ const data: AppData = {
   },
 
   main: {
-    about: "Студент 2 курса РТУ МИРЭА по специальности 'Программная инженерия'. Увлечён созданием пользовательских интерфейсов, решением алгоритмических задач и внедрением современных веб-технологий.",
+    about: `Студент 2 курса РТУ МИРЭА по специальности "Программная инженерия". Увлечён созданием пользовательских интерфейсов, решением алгоритмических задач и внедрением современных веб-технологий.`,
 
     projects: [
       {

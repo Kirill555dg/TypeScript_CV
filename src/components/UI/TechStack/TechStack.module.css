@@ -1,0 +1,30 @@
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.tech {
+    font-size: 0.85rem;
+    padding: 0.25rem var(--space-md);
+    border-radius: 20px;
+    background: var(--border-color);
+    color: var(--primary-color);
+}
+
+/* Категории */
+/* TechStack.module.css */
+.tech[data-category="frontend"] {
+    background: var(--tech-frontend);
+    color: var(--tech-frontend-text);
+}
+
+.tech[data-category="tools"] {
+    background: var(--tech-tools);
+    color: var(--tech-tools-text);
+}
+
+.tech[data-category="methodology"] {
+    background: var(--tech-methodology);
+    color: var(--tech-methodology-text);
+}

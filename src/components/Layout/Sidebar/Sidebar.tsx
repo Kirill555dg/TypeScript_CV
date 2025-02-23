@@ -1,14 +1,24 @@
 import React from 'react';
 import styles from './Sidebar.module.css';
-import Profile from './Sections/Profile/Profile';
-import Contacts from './Sections/Contacts/Contacts';
-import SkillsList from './Sections/Skills/SkillsList';
-import LanguagesList from './Sections/Languages/LanguagesList';
+import Profile, { ProfileProps } from './Sections/Profile/Profile';
+import Contacts, { ContactsProps } from './Sections/Contacts/Contacts';
+import SkillsList, { Skill } from './Sections/Skills/SkillsList';
+import LanguagesList, { Language } from './Sections/Languages/LanguagesList';
 import QualitiesList from './Sections/Qualities/QualitiesList';
-import { SidebarProps } from '../../../data/interfaces';
+import avatarImage from '@/assets/images/avatar.jpg'; // Добавьте импорт
+
+export interface SidebarProps {
+  profile: ProfileProps;
+  contacts: ContactsProps;
+  skills: Skill[];
+  languages: Language[];
+  qualities: string[];
+}
+
 
 export default function Sidebar({
-  personal,
+  profile,
+  contacts,
   skills,
   languages,
   qualities
@@ -16,22 +26,14 @@ export default function Sidebar({
   return (
     <aside className={styles.sidebar}>
       <Profile
-        name={personal.name}
-        position={personal.position}
-        description={personal.description}
+        avatar={avatarImage}
+        name={profile.name}
+        position={profile.position}
+        description={profile.description}
       />
-      
-      <Contacts
-        email={personal.contacts.email}
-        telegram={personal.contacts.telegram}
-        github={personal.contacts.github}
-        vk={personal.contacts.vk}
-      />
-
+      <Contacts {...contacts} />
       <SkillsList items={skills} />
-      
       <LanguagesList items={languages} />
-      
       <QualitiesList items={qualities} />
     </aside>
   );

@@ -1,0 +1,16 @@
+.main {
+    padding: 2rem 3rem;
+    background: var(--bg-color);
+  }
+  
+  @media (max-width: 1024px) {
+    .main {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main {
+      padding: 1.5rem;
+    }
+  }
