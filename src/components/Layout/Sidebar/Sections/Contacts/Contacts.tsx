@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Contacts.module.css';
 import Icon from '../../../../UI/Icon/Icon';
 import SectionTitle from '../../../../UI/SectionTitle/SectionTitle';

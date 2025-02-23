@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './SkillsList.module.css';
 import TechStack from '../../../../UI/TechStack/TechStack';
 import SectionTitle from '../../../../UI/SectionTitle/SectionTitle';

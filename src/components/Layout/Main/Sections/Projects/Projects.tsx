@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Projects.module.css';
 import SectionTitle from '../../../../UI/SectionTitle/SectionTitle';
 import TechStack from '../../../../UI/TechStack/TechStack';

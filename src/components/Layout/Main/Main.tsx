@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Main.module.css';
 import About from './Sections/About/About';
 import Projects, { Project } from './Sections/Projects/Projects';

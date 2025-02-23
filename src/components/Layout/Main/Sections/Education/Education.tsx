@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Education.module.css';
 import SectionTitle from '../../../../UI/SectionTitle/SectionTitle';
 import TimelineItem from '../../../../UI/TimelineItem/TimelineItem';

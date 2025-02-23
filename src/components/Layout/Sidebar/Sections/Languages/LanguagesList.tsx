@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './LanguagesList.module.css';
 import SectionTitle from '../../../../UI/SectionTitle/SectionTitle';
 

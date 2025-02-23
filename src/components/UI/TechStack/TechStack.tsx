@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './TechStack.module.css';
 
 export interface TechItem {

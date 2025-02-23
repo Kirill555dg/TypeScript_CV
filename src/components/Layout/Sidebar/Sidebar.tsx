@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Sidebar.module.css';
 import Profile, { ProfileProps } from './Sections/Profile/Profile';
 import Contacts, { ContactsProps } from './Sections/Contacts/Contacts';
